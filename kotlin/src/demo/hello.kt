@@ -75,7 +75,7 @@ fun main(args: Array<String>) {
 //        print(x)
 //    }
     
-    for(x in 9 downTo 0 step 3){
+    for(x in 10 downTo 0 step 3){
         print(x)
     }
 }
