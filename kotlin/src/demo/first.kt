@@ -98,11 +98,35 @@ fun main(args: Array<String>) {
     //声明基本对象或接口时无须new关键字
 //    val rectangle = Rectangle(5.0,2.0)
     
-    val customer = Customer("jiaoxm","jiaoxm994@gmail.com")
-    customer.name = "jiachenhao"
-    customer.email = "jiachenhao@gmail.com"
-    println(customer.toString())
-
+//    val customer = Customer("jiaoxm","jiaoxm994@gmail.com")
+//    customer.name = "jiachenhao"
+//    customer.email = "jiachenhao@gmail.com"
+//    println(customer.toString())
+    
+//    println(foo(1))
+//    println(foo(5))
+//    println(foo(5,"yes it is, "))
+//    val list = listOf(1,2,3,4,5)
+//    val positives = list.filter { x -> x>2 }
+//    val positives2 = list.filter { it > 2 }
+//    println(positives.toString())
+//    println(positives2.toString())
+    
+//    val map = HashMap<Int,String>()
+//    map.put(1,"One")
+//    map.put(2,"Two")
+//    map.put(3,"Three")
+//    for((k,v) in map){
+//        println("$k -> $v")
+//    }
+    
+    val p:String by lazy{
+        println("first ")
+        "hello"
+    }
+    
+    println(p)
+    println(p)
     
 }
 
@@ -166,6 +190,13 @@ fun describe(obj: Any): String = when (obj) {
     is Long     -> "Long"
     !is String  -> "Not a string"
     else        -> "Unknown"
+}
+
+fun foo(a:Int = 0, b:String = "hello"){
+    when {
+        a == 5 -> println(b+a)
+    }
+    
 }
 
 
