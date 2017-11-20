@@ -102,6 +102,7 @@ fun main(args: Array<String>) {
     customer.name = "jiachenhao"
     customer.email = "jiachenhao@gmail.com"
     println(customer.toString())
+
     
 }
 
