@@ -75,9 +75,24 @@ fun main(args: Array<String>) {
 //        print(x)
 //    }
     
-    for(x in 10 downTo 0 step 3){
-        print(x)
-    }
+//    for(x in 9 downTo 0 step 3){
+//        print(x)
+//    }
+    
+    val items = listOf("apple","orange","abv","pear")
+    //遍历items
+//    for(item in items){
+//        println(item)
+//    }
+//
+    //检查元素是否包含
+//    when {
+//        "orange" in items -> println("juicy")
+//        "apple" in items -> println("hello is in items")
+//    }
+    
+    //高级遍历，过滤、排序、大小写
+    items.filter { it.startsWith("a") }.sortedBy { it }.map { it.toUpperCase() }.forEach{ println(it) }
 }
 
 /*
